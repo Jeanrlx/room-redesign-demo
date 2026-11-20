@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Room Redesign</title>
+  <meta name="description" content="Get in touch with questions about the bedroom redesign, suppliers, materials and costs.">
+  <meta name="theme-color" content="#faf8f5">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23b5643c'/%3E%3Cpath d='M7 22v-7h18v7M7 18h18M10 15v-3h5v3' stroke='white' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/movimento.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6h18v6M3 15h18M6 12V9h5v3"/></svg>
+        </span>
+        Room Redesign
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="processo.html">Process</a></li>
+        <li><a href="resultado.html">Results</a></li>
+        <li><a class="nav-cta" href="contato.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-header">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="You are here"><a href="index.html">Home</a> / Contact</nav>
+        <span class="eyebrow">Contact</span>
+        <h1>Let’s talk</h1>
+        <p class="lead">Curious about a material, planning your own redesign or interested in a collaboration? Fill in the form or use one of the channels alongside.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:16px">
+      <div class="container contact-grid">
+        <div class="card reveal">
+          <!-- To receive real messages, create a free form at formspree.io
+               and add data-endpoint="https://formspree.io/f/YOUR_ID" to the <form> tag below. -->
+          <form id="contact-form" class="form" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="nome">Name</label>
+                <input id="nome" aria-describedby="nome-erro" name="nome" type="text" autocomplete="name" required minlength="2">
+                <p class="field-error" id="nome-erro">Please enter your name.</p>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" aria-describedby="email-erro" name="email" type="email" autocomplete="email" required>
+                <p class="field-error" id="email-erro">Please enter a valid email.</p>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="telefone">Phone <span class="optional">(optional)</span></label>
+                <input id="telefone" name="telefone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+974 0000 0000">
+              </div>
+              <div class="field">
+                <label for="assunto">Subject</label>
+                <select id="assunto" aria-describedby="assunto-erro" name="assunto" required>
+                  <option value="">Choose…</option>
+                  <option>Question about the project</option>
+                  <option>Materials and finishes</option>
+                  <option>Supplier and trade recommendations</option>
+                  <option>Costs and budget</option>
+                  <option>Collaboration</option>
+                  <option>Something else</option>
+                </select>
+                <p class="field-error" id="assunto-erro">Please choose a subject.</p>
+              </div>
+            </div>
+            <div class="field">
+              <label for="mensagem">Message</label>
+              <textarea id="mensagem" aria-describedby="mensagem-erro" name="mensagem" required minlength="10" placeholder="Tell me a little about what you would like to know…"></textarea>
+              <p class="field-error" id="mensagem-erro">Please write at least 10 characters.</p>
+            </div>
+            <div class="field">
+              <label class="checkbox" for="consentimento" style="font-weight:400">
+                <input id="consentimento" aria-describedby="consentimento-erro" name="consentimento" type="checkbox" required>
+                I agree that my details will only be used to reply to this message.
+              </label>
+              <p class="field-error" id="consentimento-erro">Please agree before sending.</p>
+            </div>
+            <div class="form-status" role="status" aria-live="polite"></div>
+            <div>
+              <button class="btn btn-primary" type="submit">Send message</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="card reveal" aria-label="Other ways to get in touch">
+          <h3>Other channels</h3>
+          <ul class="info-list">
+            <li>
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              </span>
+              <div><strong>Email</strong><a href="mailto:hello@example.com">hello@example.com</a></div>
+            </li>
+            <li>
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
+              </span>
+              <div><strong>WhatsApp</strong><a href="https://wa.me/" target="_blank" rel="noopener">+974 0000 0000</a></div>
+            </li>
+            <li>
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg>
+              </span>
+              <div><strong>Instagram</strong><a href="https://instagram.com/" target="_blank" rel="noopener">@roomredesign</a></div>
+            </li>
+            <li>
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </span>
+              <div><strong>Response time</strong><span>Within 2 business days</span></div>
+            </li>
+            <li>
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <div><strong>Location</strong><span>Doha, Qatar</span></div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Common questions</h2>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary>Can vinyl flooring go over ceramic tiles?</summary>
+            <p>Yes, as long as the existing floor is solid and level. Deep grout lines need to be filled with levelling compound first.</p>
+          </details>
+          <details>
+            <summary>How long does a bedroom redesign take?</summary>
+            <p>For a 10 to 15 m² room with electrics, ceiling, paint, flooring and joinery, 5 to 8 weeks is realistic. Custom joinery usually has the longest lead time.</p>
+          </details>
+          <details>
+            <summary>Can you recommend the trades you hired?</summary>
+            <p>Yes. Send a message with your area and the type of work, and I will share their details.</p>
+          </details>
+          <details>
+            <summary>Can I use your budget and schedule templates?</summary>
+            <p>Of course. Ask through the form and I will send the Excel / Google Sheets templates.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6h18v6M3 15h18M6 12V9h5v3"/></svg>
+            </span>
+            Room Redesign
+          </a>
+          <p style="margin-top:12px;max-width:320px">The full record of a 12 m² bedroom redesign: planning, build and result.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="processo.html">Process</a></li>
+            <li><a href="resultado.html">Results</a></li>
+            <li><a href="contato.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+            <li>Doha, Qatar</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Room Redesign. All rights reserved. · Demo site with sample photos (Unsplash) and placeholder text.</span>
+        <a href="#conteudo">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/movimento.js" defer></script>
+</body>
+</html>
